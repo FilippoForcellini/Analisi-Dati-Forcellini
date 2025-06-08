@@ -1,0 +1,12 @@
+import pandas as pd
+
+dati = {
+    'Modello': ['FE 350', 'TE 300', '701 Enduro', '701 Supermoto', 'FC 450', 'TC 250', 'Svartpilen 701', 'Vitpilen 701', 'Norden 901', 'FS 450'],
+    'Anno': [2020, 2021, 2019, 2022, 2020, 2021, 2018, 2019, 2022, 2020],
+    'Cilindrata': [350, 300, 692.7, 692.7, 450, 250, 692.7, 692.7, 889, 450],
+    'Potenza': [45, 52, 74, 74, 63, 49, 74, 74, 105, 63],
+    'Tipo': ['Enduro', 'Enduro', 'Enduro', 'Supermoto', 'Motocross', 'Motocross', 'Naked', 'Naked', 'Adventure', 'Supermoto'],
+    'Prezzo': [9500, 10200, 11000, 11500, 9800, 9200, 10500, 10800, 14000, 10000]
+}
+df = pd.DataFrame(dati)
+df.to_csv('dataset.csv', index=False)
